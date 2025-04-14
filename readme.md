@@ -49,7 +49,7 @@ They key concepts  and componentes within a playbook are:
 
 - Example of a playbook:
 
-('''yaml)
+~~~yaml
 - name: Configure web server
   hosts: webservers # Target hosts defined in your inventory
   become: yes      # Execute tasks with administrative privileges (e.g., sudo)
@@ -83,7 +83,7 @@ They key concepts  and componentes within a playbook are:
       ansible.builtin.service:
         name: "{{ nginx_package_name }}"
         state: restarted
-(''')
+~~~
 - How to Run
   - You execute a playbook from your Ansible control node using the ansible-playbook command:
     - ansible-playbook webserver.yml
