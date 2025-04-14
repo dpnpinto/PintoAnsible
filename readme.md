@@ -18,5 +18,8 @@ As I use Rocky Linux it is very simple to install. After you install your Rocky 
 - After each group you can put the IP adress of each device tha you  waht to control;
 - For each group you should create a group of variables that are use for the group with [servers:vars];
 
+### Testing and executing ansible comands
+- For testing your configuration file you can use 'ansible servers -m ping' (it uses module ping to ping the devices in [servers] group);
+- For executing comands in all machines from a group you can, for example, use 'ansible servers -a "cat /etc/os-release" or to reboot all machines 'ansible servers -a "reboot";
 
 
