@@ -48,7 +48,7 @@ They key concepts  and componentes within a playbook are:
 - Idempotency: A key principle in Ansible. Playbooks are generally designed to be idempotent. This means running the playbook multiple times will result in the same system state. If a system is already in the desired state described by a task, Ansible won't make any changes for that task.
 
 - Example of a playbook:
---- yaml
+'''
 - name: Configure web server
   hosts: webservers # Target hosts defined in your inventory
   become: yes      # Execute tasks with administrative privileges (e.g., sudo)
@@ -77,7 +77,7 @@ They key concepts  and componentes within a playbook are:
         name: "{{ nginx_package_name }}"
         state: started       # Ensure the service is running
         enabled: yes         # Ensure the service starts on boot
-
+'''yaml
   handlers:
     - name: Restart Nginx
       ansible.builtin.service:
