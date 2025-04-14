@@ -23,3 +23,6 @@ As I use Rocky Linux it is very simple to install. After you install your Rocky 
 - For executing comands in all machines from a group you can, for example, use 'ansible servers -a "cat /etc/os-release" or to reboot all machines 'ansible servers -a "reboot";
 
 
+### Ansible Comunity documentation
+
+[Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
