@@ -85,9 +85,9 @@ They key concepts  and componentes within a playbook are:
         state: restarted
 - How to Run
   - You execute a playbook from your Ansible control node using the ansible-playbook command:
-  ansible-playbook webserver.yml
-# Or if your inventory isn't in the default location:
-# ansible-playbook -i /path/to/your/inventory webserver.yml
+    - ansible-playbook webserver.yml
+  - Or if your inventory isn't in the default location:
+  - ansible-playbook -i /path/to/your/inventory webserver.yml
 
 ### Testing and executing ansible comands
 - For testing your configuration file you can use 'ansible servers -m ping' (it uses module ping to ping the devices in [servers] group);
