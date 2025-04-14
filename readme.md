@@ -49,7 +49,7 @@ They key concepts  and componentes within a playbook are:
 
 - Example of a playbook:
 
-(''')
+('''yaml)
 - name: Configure web server
   hosts: webservers # Target hosts defined in your inventory
   become: yes      # Execute tasks with administrative privileges (e.g., sudo)
