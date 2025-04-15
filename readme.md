@@ -13,7 +13,7 @@ As I use Rocky Linux it is very simple to install. After you install your Rocky 
   - roles (a folder) ->
 ### ansible.cfg
 - The configuration file with for example the option to use, or not(nto recomended) the validation of ssh keys
-  - Generate a config file
+  - You can generate a config file
 ~~~bash
 $ ansible-config init --disabled > ansible.cfg
 ~~~
