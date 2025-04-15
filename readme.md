@@ -13,7 +13,15 @@ As I use Rocky Linux it is very simple to install. After you install your Rocky 
   - roles (a folder) ->
 ### ansible.cfg
 - The configuration file with for example the option to use, or not(nto recomended) the validation of ssh keys
-  - Generate a config file 
+  - Generate a config file
+~~~bash
+$ ansible-config init --disabled > ansible.cfg
+~~~
+  - You can also have a more complete file that includes existing plugins
+~~~bash
+$ ansible-config init --disabled -t all > ansible.cfg
+~~~ 
+    
 ### hosts
 - You can edit this file and at the end create groups bethen brackets and put a name on it like [servers], [routers], [switches], etc;
 - After each group you can put the IP adress of each device tha you  waht to control;
