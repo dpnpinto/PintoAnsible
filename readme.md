@@ -2,9 +2,15 @@
 I use Rocky Linux then the examples and instalation are made in this Linux distro.
 ## Ansible Instalation
 As I use Rocky Linux it is very simple to install. After you install your Rocky Linux just:
-- Update Rocky Linux distro 'yum update -y'
-- Install the EPEL(Extra Packages Repository for Linux) 'yum install epel-release -y'
-- Finaly install Ansible 'yum install ansiible -y'
+~~~bash
+#!/etc/bash
+# Update Rocky Linux distro
+sudo yum update -y
+# Install the EPEL(Extra Packages Repository for Linux)
+sudo yum install epel-release -y
+# Finaly install the Ansible pakage
+sudo yum install ansiible -y
+~~~
 ## Ansible details
 - The Ansible is instaled in '/etc/ansible'
 - Inside this directory you have tree files:
