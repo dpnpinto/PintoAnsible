@@ -21,11 +21,11 @@ sudo yum install ansiible -y
 - The configuration file with for example the option to use, or not(nto recomended) the validation of ssh keys
   - You can generate a config file
 ~~~bash
-$ ansible-config init --disabled > ansible.cfg
+ansible-config init --disabled > ansible.cfg
 ~~~
   - You can also have a more complete file that includes existing plugins
 ~~~bash
-$ ansible-config init --disabled -t all > ansible.cfg
+ansible-config init --disabled -t all > ansible.cfg
 ~~~ 
     
 ### hosts
