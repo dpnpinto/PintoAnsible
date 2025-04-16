@@ -1,5 +1,6 @@
 # Some utilization of Ansible in my projects
-I use Rocky Linux then the examples and instalation are made in this Linux distro.
+I use Rocky Linux for the enterprise stuff then the examples and installation are made using this Linux distro.
+- [Rocky Linux](https://rockylinux.org)
 ## Ansible Instalation
 As I use Rocky Linux it is very simple to install. After you install your Rocky Linux just:
 ~~~bash
