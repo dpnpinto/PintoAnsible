@@ -110,7 +110,7 @@ They key concepts  and componentes within a playbook are:
 - For executing comands in all machines from a group you can, for example, use 'ansible servers -a "cat /etc/os-release" or to reboot all machines 'ansible servers -a "reboot";
 
 
-### Ansible Comunity documentation
+### Comunity documentation
 
-[Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
-[YAML Documentation](https://yaml.org)
+- [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
+- [YAML Documentation](https://yaml.org)
