@@ -1,4 +1,4 @@
-# This is my simple utilization of Ansible
+# Some utilization of Ansible in my projects
 I use Rocky Linux then the examples and instalation are made in this Linux distro.
 ## Ansible Instalation
 As I use Rocky Linux it is very simple to install. After you install your Rocky Linux just:
