@@ -12,6 +12,20 @@ sudo yum install epel-release -y
 # Finaly install the Ansible pakage
 sudo yum install ansiible -y
 ~~~
+### 
+### Configuring SSH for Passwordless Access
+Ansible communicates with managed nodes over SSH. We can config inventory(the list of target nodes) with username and password or we can use SSH key-based authentication. To enable password less access to these nodes, you need to set up SSH key-based authentication.
+#### On the control node
+- If you don't have a SSH key pair you have to generate one:
+~~~bash
+ssh-keygen -t rsa
+~~~ 
+Note: Press Enter to accept the default location and leave the passphrase empty for password less access
+#### On the managed node
+- Copy the public key ( ~/.ssh/id_rsa.pub ) from the control node to the ~/.ssh/authorized_keys file on each managed node:
+~~~bash
+ssh-copy-id username@managed_node_ip
+~~~
 ## Ansible details
 - The Ansible is instaled in '/etc/ansible'
 - Inside this directory you have tree files:
