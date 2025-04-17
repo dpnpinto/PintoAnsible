@@ -1,4 +1,4 @@
-# Some utilization of Ansible in my projects
+# Using Ansible in nice projects
 I use Rocky Linux for the enterprise stuff then the examples and installation are made using this Linux distro.
 - [Rocky Linux](https://rockylinux.org)
 ## Ansible Instalation
