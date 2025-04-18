@@ -10,7 +10,7 @@ sudo yum update -y
 # Install the EPEL(Extra Packages Repository for Linux)
 sudo yum install epel-release -y
 # Finaly install the Ansible pakage
-sudo yum install ansiible -y
+sudo yum install ansible -y
 ~~~
 ### 
 ### Configuring SSH for Passwordless Access
