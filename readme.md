@@ -127,6 +127,6 @@ They key concepts  and componentes within a playbook are:
 
 ### Comunity documentation
 
-- [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
+- [Ansible Documentation](https://docs.ansible.com)
 - [YAML Documentation](https://yaml.org)
 - [SSH key gen](https://www.ssh.com/academy/ssh/keygen)
