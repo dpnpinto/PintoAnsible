@@ -1,5 +1,9 @@
 # Using Ansible in nice projects
-I use Rocky Linux for the enterprise stuff then the examples and installation are made using this Linux distro.
+## IStorical Stuff
+Ansible was ivented in 2012 by Michael DeHaan, then it was acquired by [Red Hat](https://www.redhat.com/) in 2015. [Ansible](https://docs.ansible.com) is a toolset with several tools, modules and it is also am extensible framework. Them main components of Ansible are modules, executables, playbooks and inventories. Ansible can target many sistems like hosts, network devices, containers and storage arrays. When is used SSH to secure the channel configuration Ansible use [Diffie–Hellman](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) algoritm to create a simetric key.
+
+## Where I use it
+I use Rocky Linux for the enterprise stuff (The comunity "Red Hat") then the examples and installation are made using this Linux distro.
 - [Rocky Linux](https://rockylinux.org)
 ## Ansible Instalation
 As I use Rocky Linux it is very simple to install. After you install your Rocky Linux just:
