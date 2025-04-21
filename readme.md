@@ -18,7 +18,7 @@ sudo yum install ansible -y
 ~~~
 ### 
 ### Configuring SSH for Passwordless Access
-Ansible communicates with managed nodes over SSH. We can config inventory(the list of target nodes) with username and password or we can use SSH key-based authentication. To enable password less access to these nodes, you need to set up SSH key-based authentication.
+Ansible communicates with managed nodes over SSH. We can config inventory(the list of target nodes) with username and password or we can use SSH key-based authentication. To enable password less access to these nodes, you need to set up SSH key-based authentication. To permit that Ansible automatically accept Host Keys Fingerprints you have to set the SSH option StrictHostKeyChecking=no.
 #### On the control node
 - If you don't have a SSH key pair you have to generate one with [ssh-keygen](https://www.man7.org/linux/man-pages/man1/ssh-keygen.1.html):
 ~~~bash
@@ -45,8 +45,7 @@ ansible-config init --disabled > ansible.cfg
   - You can also have a more complete file that includes existing plugins
 ~~~bash
 ansible-config init --disabled -t all > ansible.cfg
-~~~ 
-    
+~~~     
 ### hosts
 - You can edit this file and at the end create groups bethen brackets and put a name on it like [servers], [routers], [switches], etc;
 - After each group you can put the IP adress of each device tha you  waht to control;
