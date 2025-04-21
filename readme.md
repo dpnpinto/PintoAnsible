@@ -1,4 +1,4 @@
-# Using Ansible in my projects
+# Ansible and my projects
 Ansible is an open-source IT automation tool that simplifies tasks like configuration management, application deployment, and orchestration. It is agentless, meaning it does not require software to be installed on the managed nodes, and it uses a simple, human-readable language for its configurations [(YAML)](https://yaml.org).
 ## Historical Stuff
 Ansible was ivented in 2012 by Michael DeHaan, then it was acquired by [Red Hat](https://www.redhat.com/) in 2015. [Ansible](https://docs.ansible.com) is a toolset with several tools, modules and it is also am extensible framework. Them main components of Ansible are modules, executables, playbooks and inventories. Ansible can target many sistems like hosts, network devices, containers and storage arrays. When is used SSH to secure the channel configuration Ansible use [Diffie–Hellman](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) algoritm to create a simetric key.
