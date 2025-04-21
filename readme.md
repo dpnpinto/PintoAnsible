@@ -32,7 +32,7 @@ Note: Press Enter to accept the default location and leave the passphrase empty 
 ssh-copy-id username@managed_node_ip
 ~~~
 Note: After configuring you can use the comand ansible -i -m ping, to get the response from the hosts,  [-i is for inventory and -m for using modules](https://linux.die.net/man/1/ansible).
-## Ansible details
+## Ansible arquitecture
 - The Ansible is instaled in '/etc/ansible'
 - Inside this directory you have tree files:
   - ansible.cfg -> Where we have the ansible configurations, then is the configuration file;
