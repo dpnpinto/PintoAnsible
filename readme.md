@@ -33,7 +33,7 @@ ssh-copy-id username@managed_node_ip
 ~~~
 Note: After configuring you can use the comand ansible -i -m ping, to get the response from the hosts,  [-i is for inventory and -m for using modules](https://linux.die.net/man/1/ansible).
 ## Ansible arquitecture
-First of all you can see the version of Ansible with:
+First of all you can see the version of Ansible and the location of config file, with:
 ~~~bash
 ansilble --version
 ~~~
