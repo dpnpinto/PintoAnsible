@@ -45,7 +45,8 @@ ansible-config init --disabled > ansible.cfg
   - You can also have a more complete file that includes existing plugins
 ~~~bash
 ansible-config init --disabled -t all > ansible.cfg
-~~~     
+~~~
+- Note: After configuring you can use the comand ansible -i -m ping, to get the response from the hosts,  [-i is for inventory and -m for using modules](https://linux.die.net/man/1/ansible).
 ### hosts
 - You can edit this file and at the end create groups bethen brackets and put a name on it like [servers], [routers], [switches], etc;
 - After each group you can put the IP adress of each device tha you  waht to control;
