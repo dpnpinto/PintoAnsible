@@ -7,7 +7,7 @@ Ansible was ivented in 2012 by Michael DeHaan, then it was acquired by [Red Hat]
 I use Rocky Linux for the enterprise stuff (The comunity "Red Hat") then the examples and installation are made using this Linux distro.
 - [Rocky Linux](https://rockylinux.org)
 ## Ansible Instalation
-As I use Rocky Linux it is very simple to install. After you install your Rocky Linux just:
+As I use Rocky Linux it is very simple to install. After you install your Rocky Linux just do this:
 ~~~bash
 #!/etc/bash
 # Update Rocky Linux distro
