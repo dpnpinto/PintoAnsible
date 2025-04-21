@@ -26,7 +26,7 @@ ssh-keygen -t rsa
 ~~~ 
 Note: Press Enter to accept the default location and leave the passphrase empty for password less access
 #### On the managed node
-- You can , manualy, copy the public key (.ssh/id_rsa.pub) to the file authorized_keys inside the .ssh folder in the remote user  from the control node to the  file (.ssh/authorized_keys) on each managed node, or us the comand [ssh-copy-id](https://www.man7.org/linux/man-pages//man1/ssh-copy-id.1.html):
+- You can, manualy, copy the public key (.ssh/id_rsa.pub) to the file authorized_keys inside the .ssh folder in the remote user (.ssh/authorized_keys) on each managed node, or use the comand [ssh-copy-id](https://www.man7.org/linux/man-pages//man1/ssh-copy-id.1.html):
 ~~~bash
 ssh-copy-id username@managed_node_ip
 ~~~
