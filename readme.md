@@ -57,7 +57,8 @@ ansible-config init --disabled -t all > ansible.cfg
   - ansible.cfg inside the directory that you are using, you can have several config's by directory;
   - .ansible.cfg, an iden file inside the user home directory;
   - /etc/ansible/ansible.cfg, file inside /etc/ansible that is typically provided by packaged instalation.  
-### hosts
+### Inventories
+File hosts have the inventories of your devices
 - You can edit this file and at the end create groups bethen brackets and put a name on it like [servers], [routers], [switches], etc;
 - After each group you can put the IP adress of each device tha you  waht to control;
 - For each group you should create a group of variables that are use for the group with [servers:vars];
