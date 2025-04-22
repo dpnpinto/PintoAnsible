@@ -43,7 +43,7 @@ ansilble --version
   - hosts -> Contains the devices that we are going to control, refered as the inventory file (Linux, Windows, Routers, Switches,etc);
   - roles (a folder) ->
 ### CONFIGURATION FILE
-- The configuration file with for example the option to use, or not(not recomended) the validation of ssh keys
+- The configuration (typically ansible.cfg) file with, for example, the option to use the validation of ssh keys
   - You can generate a config file
 ~~~bash
 ansible-config init --disabled > ansible.cfg
