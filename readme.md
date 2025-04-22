@@ -53,7 +53,7 @@ ansible-config init --disabled > ansible.cfg
 ansible-config init --disabled -t all > ansible.cfg
 ~~~
 - You can see what config file Ansible is using, knowing that it can use:
-  - ANSIBLE_CONFIG, this envoriment varible cn be set to any name that you put the Ansible config;
+  - ANSIBLE_CONFIG, this envoriment varible can be set to any name that you put the Ansible config;
   - ansible.cfg inside the directory that you are using, you can have several config's by directory;
   - .ansible.cfg, an iden file inside the user home directory;
   - /etc/ansible/ansible.cfg, file inside /etc/ansible that is typically provided by packaged instalation.  
