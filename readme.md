@@ -53,10 +53,10 @@ ansible-config init --disabled > ansible.cfg
 ansible-config init --disabled -t all > ansible.cfg
 ~~~
 - You can see what config file Ansible is using, knowing that it can use:
-  1 - ANSIBLE_CONFIG, this envoriment varible cn be set to any name that you put the Ansible config;
-  2 - ansible.cfg inside the directory that you are using, you can have several config's by directory;
-  3 - .ansible.cfg, an iden file inside the user home directory;
-  4 - /etc/ansible/ansible.cfg, file inside /etc/ansible that is typically provided by packaged instalation.  
+  - ANSIBLE_CONFIG, this envoriment varible cn be set to any name that you put the Ansible config;
+  - ansible.cfg inside the directory that you are using, you can have several config's by directory;
+  - .ansible.cfg, an iden file inside the user home directory;
+  - /etc/ansible/ansible.cfg, file inside /etc/ansible that is typically provided by packaged instalation.  
 ### hosts
 - You can edit this file and at the end create groups bethen brackets and put a name on it like [servers], [routers], [switches], etc;
 - After each group you can put the IP adress of each device tha you  waht to control;
