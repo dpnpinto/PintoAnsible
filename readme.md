@@ -58,8 +58,17 @@ ansible-config init --disabled -t all > ansible.cfg
   - .ansible.cfg, an iden file inside the user home directory;
   - /etc/ansible/ansible.cfg, file inside /etc/ansible that is typically provided by packaged instalation.  
 ### Inventories
-File hosts have the inventories of your devices
-- You can edit this file and at the end create groups bethen brackets and put a name on it like [servers], [routers], [switches], etc;
+File hosts has the inventories of your devices, this file is defined in  ansible.cfg file, and have the relative path to this file. 
+Example with hosts located in same directory as ansible.cfg
+~~~yaml
+[defaults]
+inventory = hosts
+~~~
+- You can edit this file (hosts), that is estruturated in [INI format](https://en.wikipedia.org/wiki/INI_file) and have the groups between brackets, like [servers], [routers], [switches], etc;
+- The group [all] hva all group in it, it is not needed to add devices to it, you can test it using the module ping:
+  - ~~~bash
+    ansible all -m ping
+    ~~~ 
 - After each group you can put the IP adress of each device tha you  waht to control;
 - For each group you should create a group of variables that are use for the group with [servers:vars];
 ### roles
